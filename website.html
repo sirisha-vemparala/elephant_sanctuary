@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elephant Sanctuary Jaipur</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: hsl(336, 14%, 93%);
+    
+      color: #0eadc5;
+    }
+
+    header {
+       p-style= "background-image:();" /* Add your elephant image here */
+      background-size: cover;
+      background-position: center;
+      color:rgb(219, 79, 19);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #b2d515;
+    }
+
+    nav a {
+      color: rgb(83, 30, 182);
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    nav a:hover {
+      background-color: #4CAF50;
+    }
+
+    .content-section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .content-section h2 {
+      color: #4CAF50;
+      margin-bottom: 30px;
+    }
+
+    .services {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .service {
+      background-color: #fff;
+      padding: 20px;
+      margin: 10px;
+      width: 30%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .service img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .service h3 {
+      color: #4CAF50;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin: 20px 0;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .contact-form {
+      display: none;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Elephant Sanctuary Jaipur</h1>
+    <p>Embark on a unique journey at our elephant sanctuary, where you can connect with these majestic creatures in a meaningful and unforgettable way.</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#book">Book Elephant Ride</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+
+  <!-- About Us Section -->
+  <section class="content-section" id="about">
+    <h2>About Us</h2>
+    <p>Our mission is to provide a safe haven for rescued elephants, offering them a life of dignity and respect. Engage in up-close interactions, guided by our knowledgeable and passionate staff, and gain a deeper understanding of these gentle giants. The sanctuary in Jaipur offers activities like feeding, bathing, and learning about the elephants’ well-being and conservation.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section class="content-section" id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+
+      <div class="service">
+        <img src="C:/Users/Hello/Downloads/PORTFOLIO/PORTFOLIO/images/feeding.jpg" alt="Elephant Feeding"> <!-- Add the Elephant Feeding image -->
+        <h3>Elephant Feeding</h3>
+        <p>Immerse yourself in the unique opportunity to hand-feed and interact with the majestic elephants, learning about their diet and behavior in a natural setting.</p>
+      </div>
+
+      <div class="service">
+        <img src="C:/Users/Hello/Downloads/PORTFOLIO/PORTFOLIO/images/Jaipur-Elephant-Ride_d38df.png" alt="Elephant Ride"> <!-- Add the Elephant Ride image -->
+        <h3>Elephant Rides</h3>
+        <p>Take a memorable ride on the back of an elephant and explore the beauty of nature as you bond with these gentle giants.</p>
+      </div>
+
+      <div class="service">
+        <img src="C:/Users/Hello/Downloads/PORTFOLIO/PORTFOLIO/images/elephant enrichment activties.png" alt="Elephant Enrichment"> <!-- Add Elephant Enrichment image -->
+        <h3>Elephant Enrichment Activities</h3>
+        <p>Engage in activities that stimulate the elephants mentally and physically, promoting their well-being and happiness in a safe environment.</p>
+      </div>
+
+      <div class="service">
+        <img src="C:/Users/Hello/Downloads/PORTFOLIO/PORTFOLIO/images/volunteer.png" alt="Volunteer Program"> <!-- Add Elephant Volunteer Program image -->
+        <h3>Volunteer Program</h3>
+        <p>Become a part of our sanctuary by joining our volunteer program, where you will help care for and interact with elephants while learning about their conservation.</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Book Elephant Ride -->
+  <section class="content-section" id="book">
+    <h2>Book an Elephant Ride</h2>
+    <p>Fill out the form below to book a ride with our elephants and enjoy an unforgettable experience!</p>
+    <button onclick="showContactForm()">Book Now</button>
+    <div class="contact-form" id="contactForm">
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Message"></textarea>
+      <button>Submit</button>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section class="content-section" id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feel free to reach out to us!</p>
+    <button onclick="showContactForm()">Contact Us</button>
+    <div class="contact-form" id="contactForm">
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Message"></textarea>
+      <button>Submit</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Elephant Sanctuary Jaipur. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showContactForm() {
+      var form = document.getElementById('contactForm');
+      form.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
